@@ -42,10 +42,13 @@ Uit de evaluatie blijkt dat synthetische data gebruikerswaarde behoudt, maar dat
 - **TVAE** presteerde het best op de modellen: met een lage RMSE en een relatief hoge Adjusted R²-score, wat duidt op een sterke overeenkomst met echte data.
 - **PATEGAN** presteerde goed op foutmarges (MAPE en RMSE), maar Adjusted R² was laag, wat betekent dat de onderlinge relaties in de dataset minder goed worden gerepresenteerd.
 
-![Modelprestaties](Assets:images/image001.jpg)  
+![Modelprestaties](Images/image001.jpg)  
 *Figuur 1 - Vergelijking van de modelprestaties.*
 
 De visualisaties van de lineaire regressie geven een duidelijk beeld van hoe dicht de synthetisch gegenereerde data (CTAB-GAN+, TVAE en PATE) bij de oorspronkelijke dataset ligt. Zo wordt ook visueel duidelijk waarom PATE bij sommige modellen een relatief lage R² behaalt: in de grafieken is zichtbaar dat de voorspellingen verder afwijken van de werkelijke waarden dan bij andere methoden.
+
+![Modelprestaties](Images/image010.jpg)  
+*Figuur 2 - Lineaire Regressie plots.*
 
 Daarnaast valt op dat de schaal van plot (e), iets afwijkt van de andere plots. Dit komt door enkele grote uitschieters in de originele data. Het is interessant om te zien hoe de synthetische datageneratiemethoden met deze outliers omgaan: sommige modellen lijken robuuster en weten de extreme waarden beter te benaderen, terwijl andere juist meer spreiding in de voorspellingen laten zien. Hiermee wordt direct zichtbaar hoe sterk (of minder sterk) elk model met uitzonderlijke data kan omgaan en hoe die uitschieters het algemene voorspellingstraject beïnvloeden.
 
@@ -60,21 +63,30 @@ Privacy is een cruciaal aspect bij synthetische data. De tabel hieronder toont d
 - **CTAB-GAN+** heeft een betere privacybescherming dan TVAE, maar scoort minder goed dan PATEGAN.
 
 ![Privacybescherming](Assets:images/bestandsnaam.png)  
-*Figuur 2 - Vergelijking van privacybescherming tussen modellen.*
+*Figuur 3 - Vergelijking van privacybescherming tussen modellen.*
 
 ### Ruimtelijke Analyse van de Synthetische Data
 
 Voor woningmarktanalyses is de ruimtelijke verdeling van woningen essentieel. In de scatterplot hieronder lijkt de synthetische data niet overeen te komen met de echte data.
 
-![Scatterplot Synthetische Data](assets/images/scatterplot_synthetische_data.png)  
-*Figuur 3 - Ruimtelijke verdeling van de synthetische dataset.*
+![Scatterplot Synthetische Data](Images/image008.jpg)  
+*Figuur 4 - Ruimtelijke verdeling van de synthetische dataset.*
 
 Echter, wanneer we de statistische verdeling van de coördinaten bekijken, blijkt dat de synthetische data wel de juiste spreiding heeft.
+<p align="center">
+  <img src="Images/image009.jpg" width="45%">
+  <img src="Images/image007.jpg" width="45%">
+</p>
+*Figuur 5 - verdeling van de coordinaten.*
 
 Dit komt doordat de algemene datageneratiemethoden goed zijn in het nabootsen van de dataspreiding, maar moeite hebben met het vastleggen van de relatie tussen x- en y-coördinaten. Hierin presteert het GeoPointGAN-model aanzienlijk beter, zoals te zien is aan de bijgevoegde plots.
 
-![GeoPointGAN vergelijking](Assets:images/bestandsnaam.png)  
-*Figuur 4 - Vergelijking tussen traditionele modellen en GeoPointGAN.*
+<p align="center">
+  <img src="Images/image003.jpg" width="32%">
+  <img src="Images/image004.jpg" width="32%">
+  <img src="Images/image005.jpg" width="32%">
+</p>
+*Figuur 4 - Ruimtelijke verdeling van de echte en synthetische dataset GeoPointGan.*
 
 ## Conclusie
 

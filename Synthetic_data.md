@@ -62,7 +62,7 @@ Privacy is een cruciaal aspect bij synthetische data. De tabel hieronder toont d
 - **TVAE** scoorde het laagst op K-anonimiteit, maar biedt nog steeds een acceptabel beschermingsniveau.
 - **CTAB-GAN+** heeft een betere privacybescherming dan TVAE, maar scoort minder goed dan PATEGAN.
 
-![Privacybescherming](Assets:images/bestandsnaam.png)  
+![Privacybescherming](image002.jpg)  
 *Figuur 3 - Vergelijking van privacybescherming tussen modellen.*
 
 ### Ruimtelijke Analyse van de Synthetische Data

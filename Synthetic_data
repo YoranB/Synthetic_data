@@ -42,7 +42,7 @@ Uit de evaluatie blijkt dat synthetische data gebruikerswaarde behoudt, maar dat
 - **TVAE** presteerde het best op de modellen: met een lage RMSE en een relatief hoge Adjusted R²-score, wat duidt op een sterke overeenkomst met echte data.
 - **PATEGAN** presteerde goed op foutmarges (MAPE en RMSE), maar Adjusted R² was laag, wat betekent dat de onderlinge relaties in de dataset minder goed worden gerepresenteerd.
 
-![Modelprestaties](assets/images/modelprestaties.png)  
+![Modelprestaties](Assets:images/bestandsnaam.png)  
 *Figuur 1 - Vergelijking van de modelprestaties.*
 
 De visualisaties van de lineaire regressie geven een duidelijk beeld van hoe dicht de synthetisch gegenereerde data (CTAB-GAN+, TVAE en PATE) bij de oorspronkelijke dataset ligt. Zo wordt ook visueel duidelijk waarom PATE bij sommige modellen een relatief lage R² behaalt: in de grafieken is zichtbaar dat de voorspellingen verder afwijken van de werkelijke waarden dan bij andere methoden.
@@ -59,7 +59,7 @@ Privacy is een cruciaal aspect bij synthetische data. De tabel hieronder toont d
 - **TVAE** scoorde het laagst op K-anonimiteit, maar biedt nog steeds een acceptabel beschermingsniveau.
 - **CTAB-GAN+** heeft een betere privacybescherming dan TVAE, maar scoort minder goed dan PATEGAN.
 
-![Privacybescherming](assets/images/privacybescherming.png)  
+![Privacybescherming](Assets:images/bestandsnaam.png)  
 *Figuur 2 - Vergelijking van privacybescherming tussen modellen.*
 
 ### Ruimtelijke Analyse van de Synthetische Data
@@ -73,7 +73,7 @@ Echter, wanneer we de statistische verdeling van de coördinaten bekijken, blijk
 
 Dit komt doordat de algemene datageneratiemethoden goed zijn in het nabootsen van de dataspreiding, maar moeite hebben met het vastleggen van de relatie tussen x- en y-coördinaten. Hierin presteert het GeoPointGAN-model aanzienlijk beter, zoals te zien is aan de bijgevoegde plots.
 
-![GeoPointGAN vergelijking](assets/images/geopointgan.png)  
+![GeoPointGAN vergelijking](Assets:images/bestandsnaam.png)  
 *Figuur 4 - Vergelijking tussen traditionele modellen en GeoPointGAN.*
 
 ## Conclusie

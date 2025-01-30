@@ -42,7 +42,7 @@ Uit de evaluatie blijkt dat synthetische data gebruikerswaarde behoudt, maar dat
 - **TVAE** presteerde het best op de modellen: met een lage RMSE en een relatief hoge Adjusted R²-score, wat duidt op een sterke overeenkomst met echte data.
 - **PATEGAN** presteerde goed op foutmarges (MAPE en RMSE), maar Adjusted R² was laag, wat betekent dat de onderlinge relaties in de dataset minder goed worden gerepresenteerd.
 
-![Modelprestaties](Assets:images/bestandsnaam.png)  
+![Modelprestaties](Assets:images/image001.jpg)  
 *Figuur 1 - Vergelijking van de modelprestaties.*
 
 De visualisaties van de lineaire regressie geven een duidelijk beeld van hoe dicht de synthetisch gegenereerde data (CTAB-GAN+, TVAE en PATE) bij de oorspronkelijke dataset ligt. Zo wordt ook visueel duidelijk waarom PATE bij sommige modellen een relatief lage R² behaalt: in de grafieken is zichtbaar dat de voorspellingen verder afwijken van de werkelijke waarden dan bij andere methoden.
